@@ -1,0 +1,31 @@
+html,
+body{
+ height: 100%;
+}
+
+#cover {
+  background: #222 url('https://png.pngtree.com/thumb_back/fh260/background/20201026/pngtree-template-for-science-and-technology-presentation-connected-cells-with-links-image_439193.jpg') center center no-repeat;
+  background-size: cover;
+  color: white;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+#cover-caption {
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .card1 {position: relative; left: 200px;}
+    .card2 {position: relative; left: 300px;}
+  }
+
+@media screen and (min-width: 768px) {
+    .card2 {position: relative; left: 200px;}
+  }
+  @media screen and (min-width: 425px) {
+    .card1 {position: relative;   margin-top: 20px;  margin-left: 50px;}
+    .card2 {position: relative;   margin-top: 20px;  margin-left: 50px;}
+  }

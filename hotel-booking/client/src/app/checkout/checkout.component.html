@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+              <h1>Checkout Form</h1>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Enter Booking Number</label>
+                <input type="text" required name="roomkey" class="form-control" id="userPost" ngModel required/>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Enter User Name</label>
+                <input type="text" required name="userName" class="form-control" id="userName" ngModel required/>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Enter Email</label>
+                <input type="email" required name="userEmail" class="form-control" id="userEmail" ngModel required/>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <br />
+            <br />
+            <div *ngIf="message" [innerHTML]="message">
+              <br />
+            </div>
+          </div>
+         
+    </div>
+</div>
